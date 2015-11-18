@@ -1,4 +1,0 @@
-function myFunc()
-{
-alert("Alert");
-}
