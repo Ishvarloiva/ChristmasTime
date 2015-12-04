@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="../res/css/project.css">
 		<script src="../res/js/soyutils.js"></script>
 		<script src="../res/js/templates.js"></script>
+		<script src="../res/js/recipes.js"></script>
 	</head>
 	<body>
 		<div id="container" class="container_12">
@@ -13,19 +14,14 @@
 			<div id="header_js">
 			</div>
 			
+			<div id="content_js">
+			</div>
+			
 			<script>
 				document.getElementById("header_js").innerHTML = templates.header();
+				document.getElementById("content_js").innerHTML = recipes.first();
 			</script>
 			
-			<div class="grid_6">
-				<h2>Turkey</h2>
-				<image src="../res/images/turkey.png"></image>
-			</div>
-			<div class="grid_6">
-				<h2>Ginger Cookie</h2>
-				<image src="../res/images/cookie.png"></image>
-			</div>
-
             <div class="grid_4 suffix_4 prefix_4">
                 <hr />
                 2015-2016<br /><br />

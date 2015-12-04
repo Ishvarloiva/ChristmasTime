@@ -1,4 +1,4 @@
 function myFunc()
 {
-alert("Alert");
+	document.getElementById('main_js').innerHTML = '';
 }
