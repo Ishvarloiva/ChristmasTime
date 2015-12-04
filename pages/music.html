@@ -4,34 +4,19 @@
 		<title>Christmas Time - Music</title>
 		<link rel="stylesheet" type="text/css" href="../res/css/960.css">
 		<link rel="stylesheet" type="text/css" href="../res/css/project.css">
+		<script src="../res/js/soyutils.js"></script>
+		<script src="../res/js/templates.js"></script>
 	</head>
 	<body>
 		<div id="container" class="container_12">
-			<div class="grid_12">
-				<div id="header">
-					<h1>Christmas Time</h1>
-				</div>
+			
+			<div id="header_js">
 			</div>
-		
-			<div id="link" class="grid_2">
-				<a href="../index.html">Home</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="recipes.html">Recipes</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="facts.html">Facts</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="history.html">History</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="music.html">Music</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="about.html">About</a>
-			</div>
-			<hr>
+			
+			<script>
+				document.getElementById("header_js").innerHTML = templates.header();
+			</script>
+			
             <div class="grid_6">
                 <iframe width="460" height="345" src="https://www.youtube.com/embed/qOOaH6BAwvY" frameborder="0" allowfullscreen></iframe>
             </div>
