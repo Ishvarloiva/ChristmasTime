@@ -13,7 +13,7 @@ function showCategory(category)
 					name:data[id].name,
 					image:data[id].image,
 					description:data[id].description,
-					recipe:data[id].recipe});
+					recipe:data[id].recipe}));
 			}
 		}
 		dataType: "json"
