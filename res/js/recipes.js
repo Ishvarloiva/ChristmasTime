@@ -15,7 +15,7 @@ function showCategory(category)
 					description:data[id].description,
 					recipe:data[id].recipe}));
 			}
-		}
+		},
 		dataType: "json"
 	});
 }
