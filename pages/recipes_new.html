@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Christmas Time - Recipes</title>
+		<link rel="stylesheet" type="text/css" href="../res/css/960.css">
+		<link rel="stylesheet" type="text/css" href="../res/css/project.css">
+		<script src="../res/js/soyutils.js"></script>
+		<script src="../res/js/templates.js"></script>
+		<script src="../res/js/recipes.js"></script>
+		<script src="../res/js/recipesTemplates.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	</head>
+	<body>
+        <div id="container" class="container_12">
+            <div id="header_js">
+            </div>
+            <br /><br />
+            <script>
+                $("#header_js").append(templates.header());
+            </script>
+
+            <form method="post">
+                <div class="grid_4 prefix_2">
+                    <label>Name of recipe: </label><br />
+                    <br />
+                    <label>URL to image: </label><br />
+                    <br />
+                    <label>Short description: </label><br />
+                    <br /><br /><br /><br /><br />
+                    <label>Text of recipe: </label><br />
+                </div>
+                <div class="grid_4 suffix_2">
+                    <input type="text" name="name"><br />
+                    <br />
+                    <input type="url" name="image"><br />
+                    <br />
+                    <textarea name="description" cols="40" rows="5"></textarea>
+                    <br />
+                    <textarea name="recipe" cols="40" rows="10"></textarea>
+                </div>
+                <div class="grid_12">
+                    <fieldset>
+                        <input type="radio" value="appetizer" name="category" checked>
+                        <label>Appetizer</label><br />
+                        <input type="radio" value="main" name="category">
+                        <label>Main</label><br />
+                        <input type="radio" value="side" name="category">
+                        <label>Side</label><br />
+                        <input type="radio" value="drink" name="category">
+                        <label>Drink</label><br />
+                        <input type="radio" value="dessert" name="category">
+                        <label>Dessert</label>
+                    </fieldset>
+                    <input type="submit">
+                </form>
+
+            <div class="grid_4 suffix_4 prefix_4">
+                <hr />
+                2015-2016<br /><br />
+            </div>
+		</div>
+	</body>
+</html>
