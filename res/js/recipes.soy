@@ -1,9 +1,9 @@
 {namespace recipes}
 /**
- *
+ * Main page of recipes.
  */
-{template .first}
-	<a href="javascript:myFunc()">
+{template .main}
+	<a href="javascript:showCategory('appetizers');">
 		<div class="grid_4">
 			<h2>Appetizers</h2>
 			<image src="../res/images/penguins.jpg">
@@ -37,6 +37,27 @@
 		<div class="grid_4">
 			<h2>All</h2>
 			<image src="../res/images/manyfood.jpg">
+		</div>
+	</a>
+{/template}
+
+/**
+ * Create one small bit with recipe
+ * @param id ID of recipe.
+ * @param name Name of recipe.
+ * @param description Description of recipe.
+ * @param author Name of author.
+ * @param image Link to image.
+ * @param rating Rating of recipe.
+ */
+{template .small}
+	<a href="javascript:showRecipe({$id})">
+		<div class="grid_4">
+			<image src="{$image}" height="250px" width="250px">
+			<p class="recipe_name">{$name}</p>
+			<p class="recipe_desc">{$description}</p>
+			<p class="recipe_author">{$author}</p>
+			<p class="recipe_rating">{$rating}</p>
 		</div>
 	</a>
 {/template}

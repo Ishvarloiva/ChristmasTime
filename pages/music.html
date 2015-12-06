@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="../res/css/project.css">
 		<script src="../res/js/soyutils.js"></script>
 		<script src="../res/js/templates.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body>
 		<div id="container" class="container_12">
@@ -14,7 +15,7 @@
 			</div>
 			
 			<script>
-				document.getElementById("header_js").innerHTML = templates.header();
+				$("#header_js").append(templates.header());
 			</script>
 			
             <div class="grid_6">
