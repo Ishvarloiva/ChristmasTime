@@ -4,33 +4,19 @@
 		<title>Christmas Time - Facts</title>
 		<link rel="stylesheet" type="text/css" href="../res/css/960.css">
 		<link rel="stylesheet" type="text/css" href="../res/css/project.css">
+		<script src="../res/js/soyutils.js"></script>
+		<script src="../res/js/templates.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body>
 		<div id="container" class="container_12">
-			<div class="grid_12">
-				<div id="header">
-					<h1>Christmas Time</h1>
-				</div>
+			
+			<div id="header_js">
 			</div>
 			
-			<div id="link" class="grid_2">
-				<a href="../index.html">Home</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="recipes.html">Recipes</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="facts.html">Facts</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="history.html">History</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="music.html">Music</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="about.html">About</a>
-			</div>
+			<script>
+				$("#header_js").append(templates.header());
+			</script>
 			
 			<div class="grid_6">
 				<h2>Symbolic character</h2>
@@ -40,6 +26,11 @@
 				<h2>Dates</h2>
 				<p>There are many different holidays, some with same roots, but celebrated at different time, e.g. are Hannukah in Jewish culture or Orthodox and Catholic Christmas.</p>
 			</div>
+
+            <div class="grid_4 suffix_4 prefix_4">
+                <hr />
+                2015-2016<br /><br />
+            </div>
 		</div>
 	</body>
 </html>

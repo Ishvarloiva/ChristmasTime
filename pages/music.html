@@ -4,37 +4,31 @@
 		<title>Christmas Time - Music</title>
 		<link rel="stylesheet" type="text/css" href="../res/css/960.css">
 		<link rel="stylesheet" type="text/css" href="../res/css/project.css">
+		<script src="../res/js/soyutils.js"></script>
+		<script src="../res/js/templates.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body>
 		<div id="container" class="container_12">
-			<div class="grid_12">
-				<div id="header">
-					<h1>Christmas Time</h1>
-				</div>
-			</div>
-		
-			<div id="link" class="grid_2">
-				<a href="../index.html">Home</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="recipes.html">Recipes</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="facts.html">Facts</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="history.html">History</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="music.html">Music</a>
-			</div>
-			<div id="link" class="grid_2">
-				<a href="about.html">About</a>
+			
+			<div id="header_js">
 			</div>
 			
-			<div class="grid_6 suffix_3 prefix_3">
-				<iframe width="460" height="345" src="https://www.youtube.com/embed/t3HJgCcSUqQ" frameborder="0" allowfullscreen></iframe>
-			</div>
+			<script>
+				$("#header_js").append(templates.header());
+			</script>
+			
+            <div class="grid_6">
+                <iframe width="460" height="345" src="https://www.youtube.com/embed/qOOaH6BAwvY" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="grid_6">
+                <iframe width="460" height="345" src="https://www.youtube.com/embed/t3HJgCcSUqQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="grid_4 suffix_4 prefix_4">
+                <hr />
+                2015-2016<br /><br />
+            </div>
 		</div>
 	</body>
 </html>
