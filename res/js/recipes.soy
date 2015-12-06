@@ -51,7 +51,7 @@
 			<input type="url" name="image">
 			<fieldset>
 				<label>Appetizer: </label>
-				<input type="radio" value="appetizer" name="category">
+				<input type="radio" value="appetizer" name="category" checked>
 				<label>Main: </label>
 				<input type="radio" value="main" name="category">
 				<label>Side: </label>
@@ -71,7 +71,7 @@
  * @param id ID of recipe.
  * @param name Name of recipe.
  * @param description Description of recipe.
- * @param author Name of author.
+ * @param recipe Whole text of recipe.
  * @param image Link to image.
  */
 {template .small}
@@ -80,7 +80,8 @@
 			<image src="{$image}" height="250px" width="250px">
 			<p class="recipe_name">{$name}</p>
 			<p class="recipe_desc">{$description}</p>
-			<p class="recipe_author">{$author}</p>
+			<p class="recipe_image">{$image}</p>
+			<p class="recipe_recipe">{$recipe}</p>
 		</div>
 	</a>
 {/template}
