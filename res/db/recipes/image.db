@@ -1,5 +1,5 @@
-id10 = http://localhost:8080/res/images/turkey.jpg
-id11 = http://localhost:8080/res/images/penguins.jpg
-id12 = http://localhost:8080/res/images/mashed_potato.jpg
-id13 = http://localhost:8080/res/images/glintwein.jpg
-id14 = http://localhost:8080/res/images/cookie.jpg
+id10 = /res/images/turkey.jpg
+id11 = /res/images/penguins.jpg
+id12 = /res/images/mashed_potato.jpg
+id13 = /res/images/glintwein.jpg
+id14 = /res/images/cookie.jpg
