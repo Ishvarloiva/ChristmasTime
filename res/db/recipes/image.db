@@ -1,5 +1,5 @@
-id0 = http://myimg/
-id1 = http://valD.com/
-id2 = http://myimg/
-id3 = http://myimg/
-id4 = http://myimg/
+id10 = http://localhost:8080/res/images/turkey.jpg
+id11 = http://localhost:8080/res/images/penguins.jpg
+id12 = http://localhost:8080/res/images/mashed_potato.jpg
+id13 = http://localhost:8080/res/images/glintwein.jpg
+id14 = http://localhost:8080/res/images/cookie.jpg
