@@ -47,19 +47,17 @@
 
 /**
  * Create one small bit with recipe
- * @param id ID of recipe.
  * @param name Name of recipe.
  * @param description Description of recipe.
  * @param recipe Whole text of recipe.
  * @param image Link to image.
  */
 {template .small}
-	<a href="javascript:showRecipe({$id})">
+	<a href="javascript:showRecipe({$image}, {$recipe})">
 		<div class="grid_4">
 			<image src="{$image}" height="250px" width="250px">
 			<p class="recipe_name">{$name}</p>
 			<p class="recipe_desc">{$description}</p>
-			<p class="recipe_image">{$image}</p>
 			<p class="recipe_recipe">{$recipe}</p>
 		</div>
 	</a>
