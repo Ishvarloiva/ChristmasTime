@@ -55,10 +55,12 @@
 {template .small}
 	<a href="javascript:showRecipe({$image}, {$recipe})">
 		<div class="grid_4">
-			<image src="{$image}" height="250px" width="250px">
-			<p class="recipe_name">{$name}</p>
-			<p class="recipe_desc">{$description}</p>
-			<p class="recipe_recipe">{$recipe}</p>
+			<fieldset>
+				<image src="{$image}" height="250px" width="250px">
+				<p class="recipe_name">{$name}</p>
+				<p class="recipe_desc">{$description}</p>
+				<p class="recipe_recipe">{$recipe}</p>
+			</fieldset>
 		</div>
 	</a>
 {/template}
