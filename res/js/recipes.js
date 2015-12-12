@@ -25,14 +25,14 @@ function showRecipe(name, image, id)
 	$.ajax(
 	{
 		url: "",
-		data: {req: "recipe_whole", id: id},
+		data: {req: "recipe_text", id: id},
 		success: function(data)
 		{
 			$("#content_js").empty();
 			$("#content_js").append(recipes.recipe({
 					name:name,
 					image: image,
-					recipe:data[0]});
+					recipe:data[recipe]});
 		},
 		dataType: "json"
 	});
