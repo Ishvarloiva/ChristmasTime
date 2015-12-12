@@ -7,6 +7,7 @@ function showCategory(category)
 		success: function(data)
 		{
 			$("#content_js").empty();
+			$("#content_js").append(recipes.navigation);
 			for(id in data)
 			{
 				$("#content_js").append(recipes.small({
@@ -29,6 +30,7 @@ function showRecipe(name, image, id)
 		success: function(data)
 		{
 			$("#content_js").empty();
+			$("#content_js").append(recipes.navigation);
 			$("#content_js").append(recipes.recipe({
 					name:name,
 					image: image,

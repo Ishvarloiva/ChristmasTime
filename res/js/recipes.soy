@@ -77,3 +77,41 @@
 		<p class="recipe_text">{$recipe}</p>
 	</div>
 {/template}
+
+/**
+ * Create navigation bar on top.
+ */
+{template .navigation}
+	<div class="grid_12">
+		<a href="javascript:showCategory('appetizer');">
+			<div class="grid_2 alpha">
+				<h3>Appetizers</h3>
+			</div>
+		</a>
+		<a href="javascript:showCategory('main');">
+			<div class="grid_2">
+				<h3>Main</h3>
+			</div>
+		</a>
+		<a href="javascript:showCategory('side');">
+			<div class="grid_2">
+				<h3>Side</h3>
+			</div>
+		</a>
+		<a href="javascript:showCategory('drink');">
+			<div class="grid_2">
+				<h3>Drinks</h3>
+			</div>
+		</a>
+		<a href="javascript:showCategory('dessert');">
+			<div class="grid_2">
+				<h3>Desserts</h3>
+			</div>
+		</a>
+		<a href="javascript:showCategory('all');">
+			<div class="grid_2 omega">
+				<h3>All</h3>
+			</div>
+		</a>
+	</div>
+{/template}
