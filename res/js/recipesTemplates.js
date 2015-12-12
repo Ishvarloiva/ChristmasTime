@@ -17,7 +17,7 @@ if (goog.DEBUG) {
 
 
 recipes.small = function(opt_data, opt_ignored) {
-  return '<a href="javascript:showRecipe(' + soy.$$escapeHtml(opt_data.name) + ', ' + soy.$$escapeHtml(opt_data.image) + ', ' + soy.$$escapeHtml(opt_data.id) + ')"><div class="grid_4"><fieldset><image src="' + soy.$$escapeHtml(opt_data.image) + '" height="250px" width="250px"><p class="recipe_name">' + soy.$$escapeHtml(opt_data.name) + '</p><p class="recipe_desc">' + soy.$$escapeHtml(opt_data.description) + '</p></fieldset></div></a>';
+  return '<a href="javascript:showRecipe(\'' + soy.$$escapeHtml(opt_data.name) + '\', \'' + soy.$$escapeHtml(opt_data.image) + '\', \'' + soy.$$escapeHtml(opt_data.id) + '\')"><div class="grid_4"><fieldset><image src="' + soy.$$escapeHtml(opt_data.image) + '" height="250px" width="250px"><p class="recipe_name">' + soy.$$escapeHtml(opt_data.name) + '</p><p class="recipe_desc">' + soy.$$escapeHtml(opt_data.description) + '</p></fieldset></div></a>';
 };
 if (goog.DEBUG) {
   recipes.small.soyTemplateName = 'recipes.small';
