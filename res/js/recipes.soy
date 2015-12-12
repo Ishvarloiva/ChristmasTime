@@ -47,20 +47,33 @@
 
 /**
  * Create one small bit with recipe
+ * @param id ID of recipe.
  * @param name Name of recipe.
  * @param description Description of recipe.
- * @param recipe Whole text of recipe.
  * @param image Link to image.
  */
 {template .small}
-	<a href="javascript:showRecipe({$image}, {$recipe})">
+	<a href="javascript:showRecipe({$name}, {$image}, {$id})">
 		<div class="grid_4">
 			<fieldset>
 				<image src="{$image}" height="250px" width="250px">
 				<p class="recipe_name">{$name}</p>
 				<p class="recipe_desc">{$description}</p>
-				<p class="recipe_recipe">{$recipe}</p>
 			</fieldset>
 		</div>
 	</a>
+{/template}
+
+/**
+ * Show whole recipe.
+ * @param name Name of recipe.
+ * @param image Link to image.
+ * @param recipe Text of recipe.
+ */
+{template .recipe}
+	<div class="grid_12">
+		<image src="{$image}" height="400px" width="400px">
+		<p class="recipe_name">{$name}</p>
+		<p class="recipe_text">{$recipe}</p>
+	</div>
 {/template}
