@@ -33,13 +33,8 @@ function showRecipe(name, image, id)
 			$("#content_js").append(recipes.navigation);
 			$("#content_js").append(recipes.recipe({
 					name:name,
-					image:image,
+					image: image,
 					recipe:$("<div>" + data["recipe"] + "</div>")[0]}));
-			var obj = {
-				name: 'myObj'
-			};
-
-			JSON.stringify(obj);
 		},
 		dataType: "json"
 	});
