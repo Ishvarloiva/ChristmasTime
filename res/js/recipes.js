@@ -15,9 +15,9 @@ function showCategory(category)
 				{
 					div += recipes.small({
 						id:id,
-						name:data[id].name,
-						image:data[id].image,
-						description:data[id].description});
+						name:column[id].name,
+						image:column[id].image,
+						description:column[id].description});
 				}
 				div += "</div>";
 				$("#content_js").append(div);
