@@ -56,7 +56,7 @@
 	<a href="javascript:showRecipe('{$name}', '{$image}', '{$id}')">
 		<div class="grid_4">
 			<div class="recipe">
-				<image src="{$image}" height="250px" width="250px">
+				<image src="{$image}" class="smallImage">
 				<h3>{$name}</h3>
 				<p class="recipe_desc">{$description}</p>
 			</div>
@@ -71,7 +71,7 @@
  */
 {template .recipe}
 	<div class="grid_12">
-		<image src="{$image}" height="400px" width="400px">
+		<image src="{$image}" class="bigImage">
 		<h3>{$name}</h3>
 		<p id="recipe_text"></p>
 	</div>
