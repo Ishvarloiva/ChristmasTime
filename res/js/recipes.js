@@ -34,7 +34,7 @@ function showRecipe(name, image, id)
 			$("#content_js").append(recipes.recipe({
 					name:name,
 					image: image,
-					recipe:$("<div>" + data["recipe"] + "</div>")}));
+					recipe:$("<div>" + data["recipe"] + "</div>")[0]}));
 		},
 		dataType: "json"
 	});
