@@ -8,20 +8,44 @@ function showCategory(category)
 		{
 			$("#content_js").empty();
 			$("#content_js").append(recipes.navigation);
-			for(column in data)
+			var column = "column0";
+			var div = "<div class='grid_4'>";
+			for(id in column)
 			{
-				var div = "<div class='grid_4'>";
-				for(id in column)
-				{
-					div += recipes.small({
-						id:id,
-						name:column[id].name,
-						image:column[id].image,
-						description:column[id].description});
-				}
-				div += "</div>";
-				$("#content_js").append(div);
+				div += recipes.small({
+					id:id,
+					name:column[id].name,
+					image:column[id].image,
+					description:column[id].description});
 			}
+			div += "</div>";
+			$("#content_js").append(div);
+			
+			var column = "column1";
+			var div = "<div class='grid_4'>";
+			for(id in column)
+			{
+				div += recipes.small({
+					id:id,
+					name:column[id].name,
+					image:column[id].image,
+					description:column[id].description});
+			}
+			div += "</div>";
+			$("#content_js").append(div);
+			
+			var column = "column2";
+			var div = "<div class='grid_4'>";
+			for(id in column)
+			{
+				div += recipes.small({
+					id:id,
+					name:column[id].name,
+					image:column[id].image,
+					description:column[id].description});
+			}
+			div += "</div>";
+			$("#content_js").append(div);
 		},
 		dataType: "json"
 	});
