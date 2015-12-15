@@ -25,7 +25,7 @@ if (goog.DEBUG) {
 
 
 recipes.recipe = function(opt_data, opt_ignored) {
-  return '<div class="grid_12"><image src="' + soy.$$escapeHtml(opt_data.image) + '" height="400px" width="400px"><h3>' + soy.$$escapeHtml(opt_data.name) + '</h3><p class="recipe_text">' + soy.$$escapeHtml(opt_data.recipe) + '</p></div>';
+  return '<div class="grid_12"><image src="' + soy.$$escapeHtml(opt_data.image) + '" height="400px" width="400px"><h3>' + soy.$$escapeHtml(opt_data.name) + '</h3><p id="recipe_text"></p></div>';
 };
 if (goog.DEBUG) {
   recipes.recipe.soyTemplateName = 'recipes.recipe';
