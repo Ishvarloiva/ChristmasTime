@@ -41,9 +41,14 @@ h1
 }
 div.category
 {
+	border-radius: 20px;
 	background: #005A00;
 }
-
+.navBar
+{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 div.recipe
 {
 	margin: 24px;
@@ -75,7 +80,7 @@ li
 {
 	margin: 5px;
 }
-.navBar
+#recipe_text
 {
-	margin: 10px 0px;
+	width: 892px;
 }
