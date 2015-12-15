@@ -14,9 +14,9 @@ function showCategory(category)
 			{
 				div += recipes.small({
 					id:id,
-					name:column[id].name,
-					image:column[id].image,
-					description:column[id].description});
+					name:id.name,
+					image:id.image,
+					description:id.description});
 			}
 			div += "</div>";
 			$("#content_js").append(div);
@@ -27,9 +27,9 @@ function showCategory(category)
 			{
 				div += recipes.small({
 					id:id,
-					name:column[id].name,
-					image:column[id].image,
-					description:column[id].description});
+					name:id.name,
+					image:id.image,
+					description:id.description});
 			}
 			div += "</div>";
 			$("#content_js").append(div);
@@ -40,9 +40,9 @@ function showCategory(category)
 			{
 				div += recipes.small({
 					id:id,
-					name:column[id].name,
-					image:column[id].image,
-					description:column[id].description});
+					name:id.name,
+					image:id.image,
+					description:id.description});
 			}
 			div += "</div>";
 			$("#content_js").append(div);
