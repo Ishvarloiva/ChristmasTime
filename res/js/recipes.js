@@ -8,13 +8,19 @@ function showCategory(category)
 		{
 			$("#content_js").empty();
 			$("#content_js").append(recipes.navigation);
-			for(id in data)
+			for(column in data)
 			{
-				$("#content_js").append(recipes.small({
-					id:id,
-					name:data[id].name,
-					image:data[id].image,
-					description:data[id].description}));
+				var div = "<div class='grid_4'>";
+				for(id in column)
+				{
+					div += recipes.small({
+						id:id,
+						name:data[id].name,
+						image:data[id].image,
+						description:data[id].description});
+				}
+				div += "</div>";
+				$("#content_js").append(div);
 			}
 		},
 		dataType: "json"
