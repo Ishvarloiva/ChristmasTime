@@ -31,7 +31,7 @@ function showRecipe(name, image, id)
 		{
 			$("#content_js").empty();
 			$("#content_js").append(recipes.navigation);
-			var obj = $("<p>" + data["recipe"] + "</p>");
+			var obj = $("<div class='grid_12'>" + data["recipe"] + "</p>");
 			$("#content_js").append(recipes.recipe({
 					name:name,
 					image:image}));
