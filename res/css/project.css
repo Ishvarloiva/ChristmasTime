@@ -65,3 +65,11 @@ div.left
 {
 	max-width: 400px;
 }
+.recipe_desc
+{
+	margin: 5px;
+}
+.navBar
+{
+	margin: 10px 0px;
+}
