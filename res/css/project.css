@@ -55,6 +55,7 @@ div.recipe
 }
 div.left
 {
+	margin: 24px;
 	text-align: left;
 }
 .smallImage
