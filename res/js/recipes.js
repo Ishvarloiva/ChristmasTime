@@ -15,10 +15,10 @@ function showCategory(category)
 				for(id in data[column])
 				{
 					div += recipes.small({
-						id:id,
-						name:id.name,
-						image:id.image,
-						description:id.description});
+						id:data[column][id],
+						name:data[column][id].name,
+						image:data[column][id].image,
+						description:data[column][id].description});
 				}
 				div += "</div>";
 				$("#content_js").append(div);
