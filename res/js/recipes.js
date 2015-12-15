@@ -15,7 +15,7 @@ function showCategory(category)
 				for(id in data[column])
 				{
 					div += recipes.small({
-						id:data[column][id],
+						id:id,
 						name:data[column][id].name,
 						image:data[column][id].image,
 						description:data[column][id].description});
