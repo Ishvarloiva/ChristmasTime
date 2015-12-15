@@ -46,9 +46,10 @@ div.category
 
 div.recipe
 {
-	margin: 10px 0px;
+	margin: 24px;
 	border-style: solid;
 	border-color: #005A00;
 	background: rgba(0,90,0,0.25);
 	width: 250px;
+	align: center;
 }
