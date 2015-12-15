@@ -39,3 +39,16 @@ h1
 {
 	background: #CC0000;
 }
+div.category
+{
+	background: #005A00;
+}
+
+div.recipe
+{
+	margin: 10px 0px;
+	border-style: solid;
+	border-color: #005A00;
+	background: rgba(0,90,0,0.25);
+	width: 250px;
+}
