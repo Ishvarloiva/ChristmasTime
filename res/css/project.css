@@ -1,6 +1,7 @@
 body
 {
-	background-color: #005A00;
+	background-image: url("../images/bg.jpg");
+	background-attachment: fixed;
 	font-family: calibri;
 }
 #container
@@ -39,10 +40,41 @@ h1
 {
 	background: #CC0000;
 }
-div.category
+div.category_appetizer
 {
 	border-radius: 20px;
-	background: #005A00;
+	background-image: url("../images/appetizer.jpg");
+	background-size: 145px;
+}
+div.category_main
+{
+	border-radius: 20px;
+	background-image: url("../images/main.jpg");
+	background-size: 145px;
+}
+div.category_side
+{
+	border-radius: 20px;
+	background-image: url("../images/side.jpg");
+	background-size: 145px;
+}
+div.category_drink
+{
+	border-radius: 20px;
+	background-image: url("../images/drink.jpg");
+	background-size: 145px;
+}
+div.category_dessert
+{
+	border-radius: 20px;
+	background-image: url("../images/dessert.jpg");
+	background-size: 145px;
+}
+div.category_all
+{
+	border-radius: 20px;
+	background-image: url("../images/all.jpg");
+	background-size: 145px;	
 }
 .navBar
 {
@@ -83,4 +115,8 @@ li
 #recipe_text
 {
 	width: 892px;
+}
+.navBar h3
+{
+	background: rgba(255,255,255,0.5);
 }

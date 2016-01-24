@@ -33,7 +33,7 @@ if (goog.DEBUG) {
 
 
 recipes.navigation = function(opt_data, opt_ignored) {
-  return '<div class="grid_12 navBar"><a href="javascript:showCategory(\'appetizer\');"><div class="grid_2 category alpha"><h3>Appetizers</h3></div></a><a href="javascript:showCategory(\'main\');"><div class="grid_2 category"><h3>Main</h3></div></a><a href="javascript:showCategory(\'side\');"><div class="grid_2 category"><h3>Side</h3></div></a><a href="javascript:showCategory(\'drink\');"><div class="grid_2 category"><h3>Drinks</h3></div></a><a href="javascript:showCategory(\'dessert\');"><div class="grid_2 category"><h3>Desserts</h3></div></a><a href="javascript:showCategory(\'all\');"><div class="grid_2 category omega"><h3>All</h3></div></a></div>';
+  return '<div class="grid_12 navBar"><a href="javascript:showCategory(\'appetizer\');"><div class="grid_2 category_appetizer alpha"><h3>Appetizers</h3></div></a><a href="javascript:showCategory(\'main\');"><div class="grid_2 category_main"><h3>Main</h3></div></a><a href="javascript:showCategory(\'side\');"><div class="grid_2 category_side"><h3>Side</h3></div></a><a href="javascript:showCategory(\'drink\');"><div class="grid_2 category_drink"><h3>Drinks</h3></div></a><a href="javascript:showCategory(\'dessert\');"><div class="grid_2 category_dessert"><h3>Desserts</h3></div></a><a href="javascript:showCategory(\'all\');"><div class="grid_2 category_all omega"><h3>All</h3></div></a></div>';
 };
 if (goog.DEBUG) {
   recipes.navigation.soyTemplateName = 'recipes.navigation';
